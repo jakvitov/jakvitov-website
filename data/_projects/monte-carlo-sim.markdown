@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: "Monte Carlo simulations for statistic laws"
 date: 2024-04-26
 url: https://github.com/jakvitov/math_simulations

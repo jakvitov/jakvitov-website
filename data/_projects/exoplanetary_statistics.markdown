@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: "Statistic analysis of exoplanetary dataset."
 date: 2023-06-4
 url: https://github.com/jakvitov/exoplanets_statistics/exoplanets_statistics/blob/master/exoplanet_data_analysis.ipynb

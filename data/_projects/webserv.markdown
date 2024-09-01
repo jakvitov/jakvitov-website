@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: "Webserv"
 date: 2024-02-3
 url: https://github.com/jakvitov/webserv

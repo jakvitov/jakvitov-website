@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: "Fractal canopy generator"
 date: 2023-09-23
 url: https://github.com/jakvitov/fractal_canopy

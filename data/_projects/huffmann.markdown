@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: "Huffmann ASCII decoder"
 date: 2022-04-19
 url: https://github.com/jakvitov/huffman_ascii_decoder
