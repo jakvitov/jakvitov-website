@@ -2,8 +2,6 @@
 layout: page
 title: My projects
 permalink: /projects/
-pagination:
-    enabled: true
 ---
 
 # About my afterwork pell-mells
