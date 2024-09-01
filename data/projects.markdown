@@ -2,6 +2,8 @@
 layout: page
 title: My projects
 permalink: /projects/
+pagination:
+    enabled: true
 ---
 
 # About my afterwork pell-mells
@@ -12,6 +14,15 @@ I focus almost entirely on backend or some sort of mathematical computing, front
 
 All my after work programming is entirely versioned in my repositories on [GitHub](https://github.com/jakvitov).
 
-# Projects
+# Projects:
 
-
+<div>
+  {% for project in site.projects %}
+    <hr>
+    <h2>{{ project.title }}</h2>
+    <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; height: auto;">
+    <p>{{ project.description }}</p>
+    <p><a href="{{ project.url }}">Project URL.</a></p>
+    <p><small>{{ project.date | date: "%B %d, %Y" }}</small></p>
+  {% endfor %}
+</div>

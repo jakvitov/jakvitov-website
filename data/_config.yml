@@ -40,6 +40,20 @@ defaults:
      layout: "post"
      author: "Jakub Vítovec"
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+plugins:
+  - jekyll-paginate-v2
+
+paginate:
+  enabled: true
+  collection: 'projects'
+  per_page: 3
+  title: ':title - Page :num'
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
