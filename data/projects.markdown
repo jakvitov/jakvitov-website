@@ -15,7 +15,8 @@ All my after work programming is entirely versioned in my repositories on [GitHu
 # Projects:
 
 <div>
-  {% for project in site.projects %}
+  {% assign reversed_projects = site.projects | sort: 'date' | reverse %}
+  {% for project in reversed_projects %}
     <hr>
     <h2>{{ project.title }}</h2>
     <img src="{{ project.image }}" alt="{{ project.title }}" style="max-width: 300px; height: auto;">
