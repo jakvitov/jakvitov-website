@@ -3,8 +3,8 @@ email: jakvitov@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal website, where I as a software developer post various of my personal 
   projects or just share some random thoughts and code snippets. 
-baseurl: /
-url: https://jakvitov.github.io
+baseurl: ""
+url: https://jakvitov.cz
 github_username: jakvitov
 linkedin_username: jakub-vítovec-91a838232
 

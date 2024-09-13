@@ -1,0 +1,39 @@
+name: Build Jekyll site and deploy
+
+on:
+  push:
+    branches:
+      - main
+  merge:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.0  # Adjust to your Ruby version
+
+    - name: Install Jekyll and Bundler
+      run: |
+        gem install bundler jekyll
+        bundle install
+
+    - name: Build Jekyll Site
+      run: bundle exec jekyll build
+
+    - name: Deploy to Oracle Cloud Server
+      uses: appleboy/scp-action@v0.1.0
+      with:
+        host: ${{ secrets.ORACLE_CLOUD_HOST }} 
+        username: ${{ secrets.ORACLE_CLOUD_USERNAME }} 
+        key: ${{ secrets.ORACLE_CLOUD_SSH_KEY }}
+        source: "_site/*"
+        target: "/path/to/your/site"
