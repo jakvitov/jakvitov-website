@@ -25,7 +25,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   projects or just share some random thoughts and code snippets. 
 baseurl: /
 url: https://jakvitov.github.io
-github_username:  jakvitov
+github_username: jakvitov
+linkedin_username: jakub-vítovec-91a838232
 
 # Build settings
 theme: minima
